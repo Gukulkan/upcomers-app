@@ -1,0 +1,45 @@
+{
+  "name": "CodeMe",
+  "version": "0.1.0",
+  "description": "Demo of ReactJS + Spring For CodeMe",
+  "scripts": {
+    "debug": "webpack -d --watch & webpack-dev-server --progress --inline",
+    "start": "npm run build",
+    "build": "webpack -d && copy .\\src\\main\\resources\\templates\\index.html .\\src\\main\\resources\\static\\index.html && webpack-dev-server --progress --inline",
+    "build:prod": "webpack -p && cp src/index.html dist/index.html",
+    "watch": "webpack --watch -d"
+  },
+  "dependencies": {
+    "babel-polyfill": "^6.26.0",
+    "moment": "^2.24.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-moment": "^0.9.2",
+    "react-redux": "^7.0.2",
+    "react-router": "5.0.0",
+    "react-router-dom": "5.0.0",
+    "redux": "^4.0.1",
+    "redux-thunk": "^2.3.0",
+    "webpack": "^4.30.0",
+    "webpack-dev-server": "^3.3.1",
+    "antd": "^3.16.5",
+    "less": "^3.0.0",
+    "less-loader": "^4.0.5",
+    "style-loader": "^0.23.1",
+    "css-loader": "^2.1.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.3",
+    "@babel/preset-env": "^7.4.3",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.5",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-react": "^6.24.1",
+    "redux-devtools-extension": "^2.13.8",
+    "webpack-cli": "^3.3.1"
+  },
+  "main": "webpack.config.js",
+  "directories": {
+    "doc": "docs"
+  }
+}
